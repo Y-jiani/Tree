@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/music_recycle_item"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/music_recycle_item_shape_corner">
+
+    <TextView
+        android:id="@+id/music_item_tv_num"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/music_num"
+        android:textColor="@color/testrecord_font_brown"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@id/music_item_tv_name"/>
+
+    <TextView
+        android:id="@+id/music_item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/music_name"
+        android:textColor="@color/testrecord_font_brown"
+        android:layout_toRightOf="@id/music_item_tv_num"
+        android:layout_marginLeft="20sp"/>
+
+    <TextView
+        android:id="@+id/music_item_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/music_time"
+        android:textColor="@color/testrecord_font_brown"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/music_item_tv_name"/>
+
+</RelativeLayout>

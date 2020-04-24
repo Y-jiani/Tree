@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/info_dialog_style"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/infodialog_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="个人信息" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/infoDialog_view_btn_and_mine_ll_bg_color" />
+
+    <EditText
+        android:id="@+id/infodialog_et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/infodialog_and_login_register_et"
+        android:ems="13"
+        android:hint="用户名"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/infodialog_tv_sex"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="left"-->
+        <!--            android:text="性别:" />-->
+
+        <!--        <RadioGroup-->
+        <!--            android:id="@+id/infodialog_radioGroup_sex"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_toRightOf="@+id/infodialog_tv_sex"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/infoDialog_btnMan"-->
+        <!--                style="@style/infoDialog_RadioButtonStyle"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="35dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:checked="true"-->
+        <!--                android:drawableTop="@drawable/infodialog_sir_selector" />-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/infodialog_btnWoman"-->
+        <!--                style="@style/infoDialog_RadioButtonStyle"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="35dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:drawableTop="@drawable/infodialog_lady_selector" />-->
+        <!--        </RadioGroup>-->
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="------------------------电话------------------------" />
+
+    <EditText
+        android:id="@+id/infodialog_et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/infodialog_and_login_register_et"
+        android:ems="13"
+        android:hint="空"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="left"
+        android:text="------------------------邮箱------------------------" />
+
+    <EditText
+        android:id="@+id/infodialog_et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/infodialog_and_login_register_et"
+        android:ems="13"
+        android:hint="空"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/infodialog_btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/login_register_btn_bg"
+            android:text="确认"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/infodialog_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/login_register_btn_bg"
+            android:text="取消"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

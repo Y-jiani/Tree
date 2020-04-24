@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/infoDialg_and_login_register_et_color"/>
+    <corners android:radius="50dp"/>
+    <padding android:bottom="2dp" android:left="7dp" android:right="7dp" android:top="2dp"/>
+</shape>

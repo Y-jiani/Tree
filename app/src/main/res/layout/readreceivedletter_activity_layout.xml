@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <Button
+            android:id="@+id/readreceivedletter_btn_back"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/writeletter_btn_back"
+            android:layout_marginVertical="3dp"
+            android:layout_marginLeft="22dp"/>
+        <TextView
+            android:id="@+id/readreceivedletter_tv_titlebar"
+            android:layout_width="0dp"
+            android:text="@string/readletter_tv_title"
+            android:layout_marginVertical="4dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:layout_weight="8"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="22dp" />
+    </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/writeletter_bg_small">
+                <TextView
+                    android:id="@+id/readreceivedletter_tv_title"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:text="@string/readletter_tv_title"
+                    android:hint=""
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/readreceivedletter_tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:gravity="center"
+                    android:text="@string/writeletter_tv_date"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="6"
+                        android:layout_gravity="center"
+                        android:background="@drawable/readreceivedletter_view_bg"
+                        android:layerType="software" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/readreceivedletter_iv_cat"
+                            />
+
+                        <TextView
+                            android:id="@+id/readreceivedletter_tv_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/readreceivedletter_tv_name1"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/readreceivedletter_tv_letterbody"
+                    style="@style/AppTheme.writeletter_etStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="@string/readletter_tv_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="top"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/readreceivedletter_iv_dog"
+                            />
+                        <TextView
+                            android:id="@+id/readreceivedletter_tv_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:text="@string/readreceivedletter_tv_name2"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="6"
+                        android:layout_gravity="center"
+                        android:background="@drawable/readreceivedletter_view_bg"
+                        android:layerType="software" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/readreceivedletter_tv_replybody"
+                    style="@style/AppTheme.writeletter_etStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="@string/readletter_tv_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="top"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

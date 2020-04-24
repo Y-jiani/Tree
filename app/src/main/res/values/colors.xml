@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A86948</color>
+    <color name="colorPrimaryDark">#A86948</color>
+    <color name="colorAccent">#A86948</color>
+    <color name="menu_mine_radioGroup_bg_color">#C59674</color>
+    <color name="menubottom_normal_color">#F9D3B1</color>
+    <color name="menubottom_press_color">#EBD7BD</color>
+    <color name="infoDialog_and_login_register_mine_bg_color">#FDF2F0</color>
+    <color name="infoDialg_and_login_register_et_color">#FAF6F6</color>
+<!--    <color name="login_register_bt_color">#A65C58</color>-->
+    <color name="login_register_bt_color">#EBAF6460</color>
+    <color name="infoDialog_view_btn_and_mine_ll_bg_color">#EEF1CDB9</color>
+    <color name="line_gray">#e5e5e5</color>
+
+    <!--testrecord_recycle_item-->
+    <color name="testrecord_bg_cream">#FAF7F3</color>
+    <color name="testrecord_font_brown">#584E3F</color>
+
+    <!--treehole_recycle_item-->
+    <color name="treehole_mailbtn_bg_cream">#4FE4D0BB</color>
+
+    <!--letter_recycle_item-->
+    <color name="letter_bg_white">#FFFFFF</color>
+    <color name="letter_date_gray">#AFAFAF</color>
+
+    <!--treehole_fragment-->
+    <color name="treehole_bg_brown">#CDA48E</color>
+    <color name="treehole_mailbtn_bg_yellow">#3BE5DB96</color>
+    <color name="treehole_btn_brown">#AC8961</color>
+
+    <!--test_fragment-->
+    <color name="test_fragment_bg_cream">#e7c5aa</color>
+    <color name="test_fragment_btn_brown">#8A551A</color>
+
+    <!--letter_activity-->
+    <color name="letter_activity_toolbar_bg_brwon">#915f3a</color>
+    <color name="letter_activity_bg_creambrown">#F1E8E5</color>
+
+    <!--    通用颜色-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhitealpha">#CEFFFFFF</color>
+
+    <!--    test_activity-->
+    <color name="test_bg_cream">#F7F4F2</color>
+    <color name="test_rb_normal_brown">#965B2D</color>
+    <color name="test_rb_normal_cream">#F4EDE7</color>
+    <color name="test_rb_pressed_color">#e7c5aa</color>
+    <color name="test_btn_next_brown">#9E5C2F</color>
+
+    <!--    writeletter_activity-->
+    <color name="writeletter_ll_title_brown">#965B2D</color>
+    <color name="writeletter_bg_cream">#CAAFA6</color>
+
+    <!--test_fragment-->
+    <color name="test_fragment_bg">#e8d8cb</color>
+
+</resources>

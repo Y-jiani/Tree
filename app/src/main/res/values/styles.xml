@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="menu_RadioButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/menu_bottom_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="mine_RadioButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/menu_mine_radioGroup_bg_color</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="infoDialog_RadioButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="info_dialog_style">
+        <item name="android:windowBackground">@android:color/transparent</item> <!--设置dialog的背景-->
+        <item name="android:windowFrame">@null</item> <!--Dialog的windowFrame框为无-->
+        <item name="android:windowNoTitle">true</item> <!--是否有title-->
+        <item name="android:windowIsFloating">true</item> <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item> <!--是否半透明-->
+        <item name="android:windowContentOverlay">@null</item> <!--对话框是否有遮盖，这个不设置的话，可能会出现边框黑线-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item> <!--动画-->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 背景是否模糊显示-->
+    </style>
+
+    <!--    Test_activity的radiobutton样式重置-->
+    <style name="AppTheme.test_rbstyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="menu_rb_treehole">
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- Edittext 去掉滚动条-->
+    <style name="AppTheme.writeletter_etStyle">
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- PopUpWindow 的出现和消失使用淡入淡出的动画效果-->
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_gone</item>
+    </style>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/story_recycle_item"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginHorizontal="25dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/story_recycle_item_shape_corner">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/story_item_bg">
+
+        <TextView
+            android:id="@+id/story_item_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:text="日期"
+            android:textColor="@color/letter_date_gray"/>
+
+        <TextView
+            android:id="@+id/story_item_tv_storyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:text="故事标题"
+            android:textStyle="bold"
+
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

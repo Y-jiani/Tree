@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Test_fragment"
+    android:background="@color/test_fragment_bg">
+
+    <ImageView
+        android:id="@+id/test_iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/test_fragment_bannerbg"/>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/test_rl_item1"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/test_recycle_item_shape_corner"
+        android:layout_below="@id/test_iv_banner">
+        <ImageView
+            android:id="@+id/test_recycle_item_iv1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/test_item_pic1"/>
+        <TextView
+            android:id="@+id/test_item_tv_testName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/test_recycle_item_iv1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/test_tv_name1"
+            android:textColor="@color/testrecord_font_brown"/>
+
+        <Button
+            android:id="@+id/test_item_btn_test1"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/test_btn_go"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:background="@drawable/test_fragment_btn_shape_corner"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/test_recycle_item2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/test_recycle_item_shape_corner"
+        android:layout_below="@id/test_rl_item1">
+        <ImageView
+            android:id="@+id/test_recycle_item_iv2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/test_item_pic2"/>
+        <TextView
+            android:id="@+id/test_item_tv_testName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/test_recycle_item_iv2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/test_tv_name2"
+            android:textColor="@color/testrecord_font_brown"/>
+
+        <Button
+            android:id="@+id/test_item_btn_test2"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/test_btn_go"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:background="@drawable/test_fragment_btn_shape_corner"/>
+
+    </RelativeLayout>
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/test_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_below="@id/test_iv_banner"/>-->
+
+</RelativeLayout>

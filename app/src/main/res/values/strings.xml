@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">有个树洞</string>
+
+    <!--treehole_fragment-->
+    <string name="treehole_readSending">查看已发送信件</string>
+    <string name="treehole_readReceiving">查看已收到的回复</string>
+    <string name="treehole_sendingIntroduce">已发送信件介绍</string>
+    <string name="treehole_receivingIntroduce">已被回复信件介绍</string>
+    <string name="treehole_moreSend">更多已发送信件  >></string>
+    <string name="treehole_writtedLetter">查看已写的信</string>
+    <string name="treehole_repliedLetter">查看回复的信</string>
+    <string name="treehole_moreReceive">更多已收到的回复  >></string>
+    <string name="treehole_writeLetter">写信</string>
+    <string name="treehole_replyLetter">回信</string>
+
+    <!--test_fragment-->
+    <string name="test_start">开始测试</string>
+
+    <!--testrecord_recycle_item-->
+    <string name="testrecord_score">测试分数</string>
+    <string name="testrecord_result">测试结果</string>
+
+    <!--letter_recycle_item-->
+    <string name="letter_title">信件标题</string>
+
+    <!--music_recycle_item-->
+    <string name="music_num">111</string>
+    <string name="music_name">白噪音名称</string>
+    <string name="music_time">白噪音时长</string>
+
+    <!--sent_letter_activity-->
+    <string name="sent_letter_titleBar">已发送的信件</string>
+
+    <!--received_letter_activity-->
+    <string name="received_letter_titleBar">已收到的回复</string>
+
+    <!--replied_letter_activity-->
+    <string name="repliedletter_letter_titleBar">已回复的信件</string>
+
+    <!--    test_activity-->
+    <string name="test_btn_next">下 一 题</string>
+    <string name="test_tv_question">是否感到食欲不振?或情不自禁地暴饮暴食?</string>
+    <string name="test_rb_answerA">没&#160;&#160;&#160;&#160;&#160;有</string>
+    <string name="test_rb_answerB">轻&#160;&#160;&#160;&#160;&#160;度</string>
+    <string name="test_rb_answerC">中&#160;&#160;&#160;&#160;&#160;度</string>
+    <string name="test_rb_answerD">严&#160;&#160;&#160;&#160;&#160;重</string>
+
+    <!--    writeletter_activity-->
+    <string name="writeletter_tv_date">2019.12.11</string>
+    <string name="writeletter_tv_name2">可爱的“小一”</string>
+    <string name="writeletter_tv_name">亲爱的“挚友”：</string>
+    <string name="writeletter_et_hint">想认识新朋友却不知道怎么开始？\n那就先了了自己把\n比如说说童年的一些趣事\n或者一段特别的人生经历……\n\n重要提示：据说上来就谈感情、谈前任的信、基本都打了水漂</string>
+    <string name="writeletter_et_title">标题</string>
+
+    <!--    readletter_activity-->
+    <string name="readletter_tv_title">与我们一路同行的你</string>
+    <string name="readletter_tv_content">亲爱的挚友：\n\n你好！
+        \n\n好久没有你的消息了，想着你又该是开始了一段忙碌的征程，不知道进展的怎么样了，好想听你讲一讲。
+        \n\n大学的时光总是那样的美好，哪怕流泪也是笑着流，当回忆起来更是让人沉醉其中，难以自拔。因为在大学，认识了很多不错的人，你就是其中一个。
+
+    </string>
+
+    <!--testfinish_activity-->
+    <string name="testfinish_tv_grade1">“小一”的测试分数是：</string>
+    <string name="testfinish_tv_grade2">100</string>
+    <string name="testfinish_tv_sentence">今天又是元气满满的一天！</string>
+    <string name="testfinish_btn_over">结束测试</string>
+    <string name="testfinish_tv_superunhappy">今天不开心吗？\n找挚友说说话吧！</string>
+    <string name="testfinish_tv_unhappy">笑一个！\n挚友在等你哟！</string>
+    <string name="testfinish_tv_normal">每一个平凡的日子都有挚友的相伴！</string>
+    <string name="testfinish_tv_happy">今天又是一个元气满满的一天！</string>
+    <string name="testfinish_tv_superhappy">要把每个快乐的日子和挚友分享哟！</string>
+
+    <!--music_fragment_layout-->
+    <string name="music_tv_name">白噪音1</string>
+
+    <!--test_recycle_item-->
+    <string name="test_tv_name1">抑郁测试</string>
+    <string name="test_tv_name2">SCL-心理测试</string>
+    <string name="test_btn_go">GO</string>
+
+    <string name="readreceivedletter_tv_name1">我是小一</string>
+    <string name="readreceivedletter_tv_name2">我是挚友</string>
+    <string name="testrecord_titleBar">测试记录</string>
+
+    <!--story_fragment_layout-->
+    <string name="story_bannerTitle">我们的故事</string>
+
+</resources>

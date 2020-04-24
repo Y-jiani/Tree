@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Treehole_fragment"
+    android:orientation="vertical"
+    android:background="@drawable/treehole_fragment_bg1">
+
+
+
+    <RelativeLayout
+        android:id="@+id/treehole_rl_sending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/testrecord_recycle_item_shape_corner">
+
+        <LinearLayout
+            android:id="@+id/treehole_ll_sending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/treehole_iv_sentIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/treehole_icon_send"/>
+
+                <TextView
+                    android:id="@+id/treehole_tv_sendingDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_alignBottom="@id/treehole_iv_sentIcon"
+                    android:textSize="18sp"
+                    android:text="@string/treehole_readSending"
+                    android:textColor="@color/testrecord_font_brown"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/treehole_tv_sendIntroduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/treehole_sendingIntroduce"
+                android:textColor="@color/testrecord_font_brown"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/treehole_iv_sendStamp"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/treehole_iv_sendmail"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+            android:id="@+id/treehole_btn_moreSend"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/treehole_iv_sendStamp"
+            android:layout_alignParentRight="true"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="33dp"
+            android:background="@drawable/treehole_recycle_item_send_shape_corner"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:text="@string/treehole_moreSend"
+            android:textColor="@color/testrecord_font_brown" />
+
+        <Button
+            android:id="@+id/treehole_btn_writtedLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/treehole_btn_moreSend"
+            android:text="@string/treehole_writtedLetter"
+            android:textColor="@color/testrecord_font_brown"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/sentletter_btn_shape_corner"
+            android:paddingHorizontal="5dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/treehole_btn_repliedLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/treehole_btn_moreSend"
+            android:text="@string/treehole_repliedLetter"
+            android:textColor="@color/testrecord_font_brown"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/sentletter_btn_shape_corner"
+            android:paddingHorizontal="5dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/treehole_rl_receiving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/testrecord_recycle_item_shape_corner">
+
+        <LinearLayout
+            android:id="@+id/treehole_ll_receving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/treehole_iv_receivedIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/treehole_icon_receive"/>
+
+                <TextView
+                    android:id="@+id/treehole_tv_recevingDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_alignBottom="@id/treehole_iv_receivedIcon"
+                    android:textSize="18sp"
+                    android:text="@string/treehole_readReceiving"
+                    android:textColor="@color/testrecord_font_brown"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/treehole_tv_receiveIntroduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/treehole_receivingIntroduce"
+                android:textColor="@color/testrecord_font_brown"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/treehole_iv_receiveStamp"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/treehole_iv_receivemail"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+            android:id="@+id/treehole_btn_moreReceive"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/treehole_iv_receiveStamp"
+            android:text="@string/treehole_moreReceive"
+            android:textColor="@color/testrecord_font_brown"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/treehole_recycle_item_receive_shape_corner"
+            android:layout_marginVertical="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="1dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="20dp">
+
+        <Button
+            android:id="@+id/treehole_btn_writeletter"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:text="@string/treehole_writeLetter"
+            android:textColor="@color/testrecord_font_brown"
+            android:textSize="14sp"
+            android:drawableTop="@drawable/treehole_icon_writeletter"
+            android:background="@drawable/treehole_btn_shape_corner"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/treehole_btn_getletter"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="end"
+            android:text="@string/treehole_replyLetter"
+            android:textColor="@color/testrecord_font_brown"
+            android:textSize="14sp"
+            android:background="@drawable/treehole_btn_shape_corner"
+            android:drawableTop="@drawable/treehole_icon_replyletter"/>
+
+    </LinearLayout>
+
+</LinearLayout>

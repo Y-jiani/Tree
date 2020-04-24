@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Story_fragment"
+    android:background="@color/testrecord_bg_cream">
+
+    <ImageView
+        android:id="@+id/story_iv_bannerbg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/story_banner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/story_bannerTitle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/story_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_below="@id/story_iv_bannerbg"
+        android:layout_marginBottom="13dp"/>
+
+</RelativeLayout>

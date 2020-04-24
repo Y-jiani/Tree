@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test_bg_big">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+    <Button
+        android:id="@+id/test_btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/test_btn_back"
+        android:layout_marginLeft="22dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/test_bg_small"
+        android:layout_weight="8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/test_tv_questionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/test_tv_questionNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/15"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="10">
+
+            <TextView
+                android:id="@+id/test_tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/test_rb_normal_brown"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <RadioGroup
+                android:id="@+id/test_rg_simpleSelect"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginTop="10dp">
+                <!--四个选项-->
+                <RadioButton
+                    android:id="@+id/test_rb_answerA"
+                    style="@style/AppTheme.test_rbstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/test_radiobutton_selector"
+                    android:text="@string/test_rb_answerA" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/test_rb_answerB"
+                    style="@style/AppTheme.test_rbstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/test_radiobutton_selector"
+                    android:text="@string/test_rb_answerB" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/test_rb_answerC"
+                    style="@style/AppTheme.test_rbstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/test_radiobutton_selector"
+                    android:text="@string/test_rb_answerC" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/test_rb_answerD"
+                    style="@style/AppTheme.test_rbstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/test_radiobutton_selector"
+                    android:text="@string/test_rb_answerD" />
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/test_tv_questionRight"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1.5">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <Button
+                android:id="@+id/test_btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/test_btn_next"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:text="@string/test_btn_next"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+
+
+
+</LinearLayout>
