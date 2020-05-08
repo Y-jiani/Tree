@@ -2,9 +2,14 @@
 
 buildscript {
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        //如果上面的阿里云镜像不行，就尝试用下面的的试试。如果用下面的，上面的就注释掉。
+//        maven { url 'https://maven.aliyun.com/repository/public' }
         google()
-        jcenter()
-        
+        jcenter(){
+            url "http://jcenter.bintray.com/"
+        }
+        mavenCentral() // add repository
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.1'
@@ -16,10 +21,15 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        //如果上面的阿里云镜像不行，就尝试用下面的的试试。如果用下面的，上面的就注释掉。
+//        maven { url 'https://maven.aliyun.com/repository/public' }
         google()
         jcenter()
         //Bmob的maven仓库地址--必填
         maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
 
