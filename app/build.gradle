@@ -18,6 +18,16 @@ android {
             abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
         }
 
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "fcec9a1e1cd680c3efb5b1b0", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+
+        //主要原因是你的项目貌似有点大，已经超过65k个方法。一个dex已经装不下了，需要个多个dex，
+        // 也就是multidex ，因为Android系统定义总方法数是一个short int，short int 最大值为65536
+        multiDexEnabled true
+
     }
 
     buildTypes {
@@ -25,6 +35,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     sourceSets {
@@ -43,18 +58,29 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
-//    Bmob
-    implementation 'cn.bmob.android:bmob-sdk:3.7.3-rc1'
+//  已手动导入
+//    Bmob自动导入
+    implementation 'cn.bmob.android:bmob-sdk:3.7.8'
+    implementation "io.reactivex.rxjava2:rxjava:2.2.8"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+/*    implementation 'cn.bmob.android:bmob-sdk:3.7.3-rc1'
     implementation "io.reactivex.rxjava2:rxjava:2.2.2"
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
     implementation 'com.squareup.okio:okio:2.1.0'
     implementation 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
-//    implementation 'cn.bmob.android:http-legacy:1.0'
+
+//    极光自动导入
+    implementation 'cn.jiguang.sdk:jmessage:2.9.2'  // 此处以JMessage 2.9.2 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:2.3.0'  // 此处以JCore 2.3.0 版本为例。
 
 //    recyclerview
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
     implementation 'com.android.support:design:29.0.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
 
 }

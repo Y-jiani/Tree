@@ -46,76 +46,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- Required SDK 核心功能-->
-        <!-- 可配置android:process参数将PushService放在其他进程中 -->
-        <service
-            android:name="com.example.tree.Utils.PushService"
-            android:enabled="true"
-            android:exported="false" android:process=":pushcore">
+        <!-- Since JCore2.0.0 Required SDK核心功能-->
+        <!-- 这个Service要继承JCommonService -->
+        <service android:name="com.example.tree.Utils.PushService"
+            android:process=":pushcore">
             <intent-filter>
                 <action android:name="cn.jiguang.user.service.action" />
             </intent-filter>
         </service>
-
-        <!-- Required SDK核心功能-->
-        <receiver
-            android:name="cn.jpush.android.service.PushReceiver"
-            android:enabled="true" android:exported="false">
-            <intent-filter android:priority="1000">
-                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
-                <!-- Required 显示通知栏 -->
-                <category android:name="com.example.tree" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.USER_PRESENT" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-            <!-- Optional -->
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-                <action android:name="android.intent.action.PACKAGE_REMOVED" />
-
-                <data android:scheme="package" />
-            </intent-filter>
-        </receiver>
-
-        <!-- Required SDK核心功能-->
-        <receiver
-            android:name="cn.jpush.im.android.helpers.IMReceiver"
-            android:enabled="true"
-            android:exported="false"/>
-
-        <!-- Required SDK核心功能-->
-        <receiver
-            android:name="cn.jpush.android.service.AlarmReceiver"
-            android:exported="false" />
-
-        <!-- Required since JCore 1.1.7. SDK 核心功能-->
-        <provider
-            android:name="cn.jpush.android.service.DataProvider"
-            android:authorities="com.example.tree.DataProvider"
-            android:exported="false" />
-
-        <!-- Required since JMessage 2.7.0 SDK 核心功能-->
-        <provider
-            android:name="cn.jpush.im.android.helpers.ipc.IMProvider"
-            android:authorities="com.example.tree.IMProvider"
-            android:exported="false" />
-
-        <!-- Required. For publish channel feature -->
-        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。-->
-        <!-- 例如: -->
-        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
-        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
-        <!-- 目前这个渠道统计功能的报表还未开放。-->
-        <meta-data
-            android:name="JPUSH_CHANNEL"
-            android:value="developer-default" />
-
-        <!-- Required. AppKey copied from Portal -->
-        <meta-data
-            android:name="JPUSH_APPKEY"
-            android:value="fcec9a1e1cd680c3efb5b1b0" />
 
         <activity
             android:name=".Activity.Music_activity"
@@ -158,6 +96,9 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths"/>
         </provider>
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
     </application>
 
 </manifest>

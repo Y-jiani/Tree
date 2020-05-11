@@ -1,10 +1,5 @@
 package com.example.tree.Activity;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -14,12 +9,18 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.example.tree.R;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 import cn.bmob.v3.Bmob;
+import cn.jpush.im.android.api.JMessageClient;
 
 public class Welcome_activity extends AppCompatActivity {
 
@@ -42,6 +43,10 @@ public class Welcome_activity extends AppCompatActivity {
         else {
             init();
         }
+//        极光IM
+//        调试模式会输出信息,方便找错
+        JMessageClient.setDebugMode(true);
+        JMessageClient.init(getApplicationContext(),true);
     }
 
 //    申请获取权限
